@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const MONTH_NAMES = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
@@ -41,6 +41,7 @@ export function GitHubHeatmap({ username = "01tushar26" }: { username?: string }
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [dark, setDark] = useState(false);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setDark(document.documentElement.classList.contains("dark"));
@@ -52,15 +53,37 @@ export function GitHubHeatmap({ username = "01tushar26" }: { username?: string }
   }, []);
 
   useEffect(() => {
-    fetch(`https://github-contributions-api.jogruber.de/v4/${username}?y=last`)
-      .then((r) => r.json())
-      .then((data) => {
-        setDays(data.contributions || []);
-        setTotal(data.total?.lastYear ?? 0);
-        setLoading(false);
-      })
-      .catch(() => { setError(true); setLoading(false); });
+    async function fetchData() {
+      const urls = [
+        `https://github-contributions-api.jogruber.de/v4/${username}?y=last`,
+        `https://github-contributions-api.jogruber.de/v4/${username}`,
+      ];
+      for (const url of urls) {
+        try {
+          const res = await fetch(url, { cache: "no-store" });
+          if (!res.ok) continue;
+          const data = await res.json();
+          if (data.contributions?.length) {
+            setDays(data.contributions);
+            setTotal(data.total?.lastYear ?? data.contributions.reduce((s: number, d: Day) => s + d.count, 0));
+            setLoading(false);
+            return;
+          }
+        } catch {
+          continue;
+        }
+      }
+      setError(true);
+      setLoading(false);
+    }
+    fetchData();
   }, [username]);
+
+  useEffect(() => {
+    if (days.length && scrollRef.current) {
+      scrollRef.current.scrollLeft = scrollRef.current.scrollWidth;
+    }
+  }, [days]);
 
   const weeks: (Day | null)[][] = [];
   let week: (Day | null)[] = [];
@@ -97,41 +120,41 @@ export function GitHubHeatmap({ username = "01tushar26" }: { username?: string }
   );
 
   return (
-    <div className="w-full rounded-xl border border-border p-4 overflow-x-auto">
-      <div className="relative h-4 mb-1" style={{ width: weeks.length * 14 }}>
-        {months.map(({ wi, m }) => (
-          <span
-            key={`${wi}-${m}`}
-            className="absolute text-[11px] text-muted-foreground"
-            style={{ left: wi * 14 }}
-          >
-            {MONTH_NAMES[m]}
-          </span>
-        ))}
+    <div className="w-full rounded-xl border border-border p-4">
+      <div ref={scrollRef} className="overflow-x-auto">
+        <div className="relative h-4 mb-1" style={{ width: weeks.length * 14 }}>
+          {months.map(({ wi, m }) => (
+            <span
+              key={`${wi}-${m}`}
+              className="absolute text-[11px] text-muted-foreground"
+              style={{ left: wi * 14 }}
+            >
+              {MONTH_NAMES[m]}
+            </span>
+          ))}
+        </div>
+        <div className="flex gap-[3px]">
+          {weeks.map((w, wi) => (
+            <div key={wi} className="flex flex-col gap-[3px]">
+              {w.map((day, di) => {
+                if (!day) return <div key={di} className="w-[11px] h-[11px]" />;
+                const level = levelFromCount(day.count);
+                const dateStr = new Date(day.date).toLocaleDateString("en-US", {
+                  month: "short", day: "numeric", year: "numeric",
+                });
+                return (
+                  <div
+                    key={di}
+                    title={`${day.count} contribution${day.count !== 1 ? "s" : ""} on ${dateStr}`}
+                    className="w-[11px] h-[11px] rounded-[2px] cursor-pointer"
+                    style={{ background: getColor(level, dark) }}
+                  />
+                );
+              })}
+            </div>
+          ))}
+        </div>
       </div>
-
-      <div className="flex gap-[3px]">
-        {weeks.map((w, wi) => (
-          <div key={wi} className="flex flex-col gap-[3px]">
-            {w.map((day, di) => {
-              if (!day) return <div key={di} className="w-[11px] h-[11px]" />;
-              const level = levelFromCount(day.count);
-              const dateStr = new Date(day.date).toLocaleDateString("en-US", {
-                month: "short", day: "numeric", year: "numeric",
-              });
-              return (
-                <div
-                  key={di}
-                  title={`${day.count} contribution${day.count !== 1 ? "s" : ""} on ${dateStr}`}
-                  className="w-[11px] h-[11px] rounded-[2px] cursor-pointer"
-                  style={{ background: getColor(level, dark) }}
-                />
-              );
-            })}
-          </div>
-        ))}
-      </div>
-
       <div className="flex items-center justify-between mt-2">
         <span className="text-[12px] text-muted-foreground">
           {total.toLocaleString()} contributions in the last year
