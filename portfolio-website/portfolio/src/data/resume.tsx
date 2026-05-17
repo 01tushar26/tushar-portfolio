@@ -223,7 +223,7 @@ export const DATA = {
       location: "India",
       description:
         "Represented 6-member team in designing IoT-based Sewage Problem Alert system, securing top finalist position among 30,000+ participating teams. Developed a comprehensive solution for real-time sewage monitoring and alerting.",
-      image: "/SIH2.webp",
+      image: "",
       links: [],
     },
     {
@@ -232,7 +232,7 @@ export const DATA = {
       location: "India",
       description:
         "Conceptualised and prototyped Blockchain-based eVault system with 256-bit encryption, earning 3rd place recognition for innovation. Built a secure digital vault solution leveraging blockchain technology for enhanced data protection.",
-      image: "/jklulogo.jpg",
+      image: "",
       win: "3rd Place Winner",
       links: [],
     },
