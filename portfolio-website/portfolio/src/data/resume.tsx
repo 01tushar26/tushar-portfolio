@@ -205,11 +205,11 @@ export const DATA = {
           href: "https://github.com/01tushar26/Youtube_seo_thumbnails",
           icon: <Icons.github className="size-3" />,
         },
-        //  {
-        //   type: "Website",
-        //   href: "https://aixai-mkfm.onrender.com/",
-        //   icon: <Icons.globe className="size-3" />,
-        // },
+         {
+          type: "Website",
+          href: "https://youtube-seo-thumbnails.tushardev.me/",
+          icon: <Icons.globe className="size-3" />,
+        },
       ],
       image: "/seo.png",
       video: "",
