@@ -135,7 +135,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/bookmystay_thumbnail.png",
       video: "",
     },
     {
