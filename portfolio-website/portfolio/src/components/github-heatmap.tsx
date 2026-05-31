@@ -5,20 +5,23 @@ import { useEffect, useRef, useState } from "react";
 const MONTH_NAMES = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
 function getColor(level: number, dark: boolean) {
-  const dark_colors: Record<number, string> = {
-    0: "#161b22",
-    1: "#2d2d2d",
-    2: "#4a4a4a",
-    3: "#6b6b6b",
-    4: "#9a9a9a",
-  };
-  const light_colors: Record<number, string> = {
-    0: "#ebedf0",
-    1: "#c8c8c8",
-    2: "#a0a0a0",
-    3: "#6b6b6b",
-    4: "#3a3a3a",
-  };
+ 
+
+const dark_colors: Record<number, string> = {
+  0: "#161b22",  // empty
+  1: "#333333",  // level 1
+  2: "#555555",  // level 2
+  3: "#888888",  // level 3
+  4: "#cccccc",  // level 4 — bright white-gray
+};
+
+const light_colors: Record<number, string> = {
+  0: "#ebedf0",  // empty
+  1: "#cccccc",  // level 1
+  2: "#888888",  // level 2
+  3: "#555555",  // level 3
+  4: "#333333",  // level 4
+};
   return (dark ? dark_colors : light_colors)[level] ?? (dark ? dark_colors[0] : light_colors[0]);
 }
 
