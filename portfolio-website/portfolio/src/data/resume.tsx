@@ -144,7 +144,7 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "Upload any PDF or lecture video and instantly chat with it, generate quizzes, and test your knowledge — all powered by RAG (Retrieval-Augmented Generation), document chunking, embeddings, and metadata-based retrieval. Features AI quiz generation using vector search and LLM prompting with ~3s latency. React frontend with PDF/Video upload, chat, and quiz interface.",
+        "Upload any PDF or lecture video and instantly chat with it, generate quizzes, and test your knowledge — all powered by RAG (Retrieval-Augmented Generation) with ~3sec latency",
       technologies: [
         "Spring Boot",
         "Spring AI",
