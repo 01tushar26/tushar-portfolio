@@ -144,7 +144,7 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "AI-powered learning platform with a RAG pipeline — document chunking, embeddings, and metadata-based retrieval. Features AI quiz generation using vector search and LLM prompting with ~3s latency. React frontend with PDF upload, chat, and quiz interface.",
+        "Upload any PDF or lecture video and instantly chat with it, generate quizzes, and test your knowledge — all powered by RAG (Retrieval-Augmented Generation), document chunking, embeddings, and metadata-based retrieval. Features AI quiz generation using vector search and LLM prompting with ~3s latency. React frontend with PDF/Video upload, chat, and quiz interface.",
       technologies: [
         "Spring Boot",
         "Spring AI",
@@ -152,6 +152,13 @@ export const DATA = {
         "PostgreSQL",
         "Docker",
         "React",
+        "RabbitMq",
+        "RAG",
+        "Vectors",
+        "FFMpeg",
+        "Whisper",
+        "MultiContainer Docker",
+        "React"
       ],
       links: [
         {
