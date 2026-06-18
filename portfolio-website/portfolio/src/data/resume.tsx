@@ -134,6 +134,11 @@ export const DATA = {
           href: "https://github.com/01tushar26/BookMyStay",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "Website",
+          href: "http://bookmystay.tushardev.me/api/v1/swagger-ui/index.html",
+          icon: <Icons.globe className="size-3" />,
+        },
       ],
       image: "/bookmystay_thumbnail.png",
       video: "",
