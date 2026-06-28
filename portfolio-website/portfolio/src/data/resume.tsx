@@ -63,7 +63,7 @@ export const DATA = {
       Cal: {
         name: "Resume",
         url: "https://drive.google.com/file/d/17tquGhlSV0F1j4Ruwp-MiDH0KTT_e8XC/view?usp=sharing",
-        icon: Icons.googleDrive,
+        icon: Icons.fileText,
         navbar: true,
       },
       email: {
