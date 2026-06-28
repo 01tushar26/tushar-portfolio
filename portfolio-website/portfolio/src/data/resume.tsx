@@ -61,10 +61,10 @@ export const DATA = {
         navbar: true,
       },
       Cal: {
-        name: "Book a Call",
-        url: "",
-        icon: Icons.calendar,
-        navbar: false,
+        name: "Resume",
+        url: "https://drive.google.com/file/d/17tquGhlSV0F1j4Ruwp-MiDH0KTT_e8XC/view?usp=sharing",
+        icon: Icons.googleDrive,
+        navbar: true,
       },
       email: {
         name: "Send Email",
