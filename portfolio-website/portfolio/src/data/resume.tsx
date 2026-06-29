@@ -122,11 +122,15 @@ export const DATA = {
       technologies: [
         "Spring Boot",
         "PostgreSQL",
-        "JPQL",
         "Bucket4j",
         "Flyway",
         "JWT",
         "Stripe",
+        "Nginx",
+        "EC2",
+        "AWS",
+        "Docker",
+        "SupaBase"
       ],
       links: [
         {
