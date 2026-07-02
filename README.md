@@ -25,3 +25,4 @@ Personal portfolio of **Tushar Tyagi** — Backend Engineer building scalable RE
 - **GitHub:** [@01tushar26](https://github.com/01tushar26)
 - **LinkedIn:** [tushartyagi2601](https://www.linkedin.com/in/tushartyagi2601/)
 - **X:** [@tushartyagi2601](https://x.com/tushartyagi2601)
+- **Portfolio:** [Tushar Tyagi](https://tushardev.me)
