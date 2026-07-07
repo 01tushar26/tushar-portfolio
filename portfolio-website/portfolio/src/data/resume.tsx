@@ -31,8 +31,10 @@ export const DATA = {
     "JUnit",
     "Mockito",
     "Jenkins",
+    "Github Actions",
     "Flyway",
     "RAGs",
+    "CI/CD"
 
   ],
   navbar: [
@@ -130,7 +132,9 @@ export const DATA = {
         "EC2",
         "AWS",
         "Docker",
-        "SupaBase"
+        "SupaBase",
+        "GitHub Actions(CI/CD)",
+
       ],
       links: [
         {
