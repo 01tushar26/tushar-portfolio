@@ -106,7 +106,7 @@ export const DATA = {
   education: [
     {
       school: "Govind Ballabh Pant Institute of Engineering and Technology",
-      href: "",
+      href: "https://gbpiet.ac.in/",
       degree: "Bachelor of Technology in Computer Science",
       logoUrl: "/gbpiet.png",
       start: "2022",
@@ -114,6 +114,70 @@ export const DATA = {
     },
   ],
   projects: [
+     {
+      title: "Learnify",
+      href: "https://github.com/01tushar26/Learnify_Major",
+      dates: "2024",
+      active: true,
+      description:
+        "Upload any PDF or lecture video and instantly chat with it, generate quizzes, and test your knowledge — all powered by RAG (Retrieval-Augmented Generation) with ~3sec latency",
+      technologies: [
+        "Spring Boot",
+        "Spring AI",
+        "pgVector",
+        "PostgreSQL",
+        "Docker",
+        "React",
+        "RabbitMq",
+        "RAG",
+        "Vectors",
+        "FFMpeg",
+        "Whisper",
+        "MultiContainer Docker",
+        "React"
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/01tushar26/Learnify_Major",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/learnify.jpeg",
+      video: "",
+    },
+    {
+      title: "DevHive",
+      href: "https://github.com/01tushar26/DevHive",
+      dates: "2025",
+      active: true,
+      description:
+        "A real-time collaborative code editor with built-in video calling — sync Monaco Editor across multiple users via WebSocket while pairing over WebRTC, with Redis-backed pub/sub keeping every keystroke fast and synced across instances",
+      technologies: [
+        "Spring Boot",
+        "WebSocket",
+        "STOMP",
+        "Redis",
+        "Redis Pub/Sub",
+        "LiveKit",
+        "WebRTC",
+        "PostgreSQL",
+        "React",
+        "Monaco Editor",
+        "JWT",
+        "Docker"
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/01tushar26/DevHive",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/devhive.png",
+      video: "",
+    },
+   
     {
       title: "BookMyStay",
       href: "https://github.com/01tushar26/BookMyStay",
@@ -149,38 +213,6 @@ export const DATA = {
         },
       ],
       image: "/bookmystay_thumbnail.png",
-      video: "",
-    },
-    {
-      title: "Learnify",
-      href: "https://github.com/01tushar26/Learnify_Major",
-      dates: "2024",
-      active: true,
-      description:
-        "Upload any PDF or lecture video and instantly chat with it, generate quizzes, and test your knowledge — all powered by RAG (Retrieval-Augmented Generation) with ~3sec latency",
-      technologies: [
-        "Spring Boot",
-        "Spring AI",
-        "pgVector",
-        "PostgreSQL",
-        "Docker",
-        "React",
-        "RabbitMq",
-        "RAG",
-        "Vectors",
-        "FFMpeg",
-        "Whisper",
-        "MultiContainer Docker",
-        "React"
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/01tushar26/Learnify_Major",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/learnify.jpeg",
       video: "",
     },
     {
