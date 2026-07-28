@@ -1,6 +1,10 @@
-# tushardev.me
+#  [Tushar Tyagi](https://tushardev.me)
 
 Personal portfolio of **Tushar Tyagi** — Backend Engineer building scalable REST APIs, microservices, and AI-powered systems.
+
+<p align ="center">
+  <img src="assets/home.png"  width="1344"/>
+</p>
 
 ## Tech Stack
 
