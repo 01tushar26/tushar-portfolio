@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, NotebookIcon ,Rss,BookOpen} from "lucide-react";
 
 export const DATA = {
   name: "Tushar Tyagi",
@@ -50,6 +50,7 @@ export const DATA = {
         icon: Icons.github,
         navbar: true,
       },
+    
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/tushartyagi2601/",
@@ -62,12 +63,18 @@ export const DATA = {
         icon: Icons.x,
         navbar: true,
       },
-      Cal: {
+      Resume: {
         name: "Resume",
-        url: "https://drive.google.com/file/d/17tquGhlSV0F1j4Ruwp-MiDH0KTT_e8XC/view?usp=sharing",
+        url: "https://drive.google.com/file/d/1Qh1TWjVi6j_VcWvoxr8iCzIPiwL0tHE6/view?usp=sharing",
         icon: Icons.fileText,
         navbar: true,
       },
+      //   Blogs: {
+      //   name: "Blogs",
+      //   url: "https://medium.com/@tushartyagi2601",
+      //   icon: NotebookIcon,
+      //   navbar: true,
+      // },
       email: {
         name: "Send Email",
         url: "mailto:tushartyagi2601@gmail.com",
@@ -120,7 +127,7 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "Upload any PDF or lecture video and instantly chat with it, generate quizzes, and test your knowledge — all powered by RAG (Retrieval-Augmented Generation) with ~3sec latency",
+        "A study assistant that turns any PDF or lecture video into an interactive knowledge base — chat with your documents and auto-generate quizzes via RAG (Retrieval-Augmented Generation), with vector-backed retrieval keeping every answer accurate and grounded at ~3sec latency.",
       technologies: [
         "Spring Boot",
         "Spring AI",
@@ -143,7 +150,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/learnify.jpeg",
+      image: "",
       video: "",
     },
     {
@@ -174,7 +181,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/devhive.png",
+      image: "",
       video: "",
     },
    
@@ -212,7 +219,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/bookmystay_thumbnail.png",
+      image: "",
       video: "",
     },
     {
@@ -235,7 +242,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/codebuddy.png",
+      image: "",
       video: "",
     },
     {
@@ -263,7 +270,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/seo.png",
+      image: "",
       video: "",
     },
   ],
@@ -289,4 +296,22 @@ export const DATA = {
       links: [],
     },
   ],
+  blogs: [
+  {
+    title: "Peeking Behind the Video Call: A WebRTC Deep Dive",
+    description:
+      "Ever wondered how a video call reaches the other person in real time? It’s not going through a server like a website does — it’s closer to a direct connection. But two devices behind two different routers finding each other and connecting directly is not that simple. In this blog, I break down how that whole thing works — client-server vs P2P, why NAT makes P2P hard, and how STUN, TURN, ICE, and WebRTC solve it.",
+    date: "July 2026",
+    href: "https://medium.com/@tushartyagi2601/peeking-behind-the-video-call-a-webrtc-deep-dive-6851ef9fb900",
+    tags: ["WebRTC", "Real Time Communication"],
+  },
+  // {
+  //   title: "RAG in Production: Lessons from Building Learnify",
+  //   description:
+  //     "What broke, what worked, and how I got PDF/lecture chat down to ~3 second latency using pgVector and Spring AI.",
+  //   date: "January 2025",
+  //   href: "https://medium.com/@tushartyagi2601/your-post-slug-2",
+  //   tags: ["RAG", "pgVector", "Spring AI"],
+  // },
+] ,
 } as const;

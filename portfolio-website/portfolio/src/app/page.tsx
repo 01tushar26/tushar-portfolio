@@ -10,6 +10,7 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import DecryptedText from "@/components/DecryptedText";
+import { BlogCard } from "@/components/blog-card";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
@@ -191,7 +192,48 @@ export default function Page() {
         </div>
       </section> */}
 
-        <section id="work">
+       
+
+ <section id="blogs">
+        <div className="space-y-12 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                 My Writing
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                   Thoughts, notes, and articles
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  I occasionally write about the things I&apos;m building, the problems
+            I run into, and what I&apos;m learning along the way.
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+      <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+        {DATA.blogs.map((blog, id) => (
+          <BlurFade
+            key={blog.title}
+            delay={BLUR_FADE_DELAY * 15 + id * 0.05}
+          >
+            <BlogCard
+              title={blog.title}
+              description={blog.description}
+              date={blog.date}
+              href={blog.href}
+              tags={blog.tags}
+            />
+          </BlurFade>
+        ))}
+      </ul>
+    </BlurFade>
+        </div>
+      </section>
+
+       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Work Experience</h2>
