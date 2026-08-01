@@ -19,6 +19,7 @@ Personal portfolio of **Tushar Tyagi** — Backend Engineer building scalable RE
 - Work experience & education
 - GitHub contribution graph
 - Links to GitHub, LinkedIn, X, and email
+- Blogs section to showing my recent writings
 
 
 
