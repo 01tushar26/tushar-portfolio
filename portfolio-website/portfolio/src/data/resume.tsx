@@ -18,6 +18,7 @@ export const DATA = {
     "Spring Boot",
     "Spring AI",
     "Spring",
+    "JWT",
     "JavaScript",
     "React.js",
     "MySQL",
@@ -34,7 +35,12 @@ export const DATA = {
     "Github Actions",
     "Flyway",
     "RAGs",
-    "CI/CD"
+    "CI/CD",
+    "Nginx",
+    "RabbitMQ",
+    "WebSocket",
+    "WebRTC",
+  
 
   ],
   navbar: [
@@ -159,20 +165,21 @@ export const DATA = {
       dates: "2025",
       active: true,
       description:
-        "A real-time collaborative code editor with built-in video calling — sync Monaco Editor across multiple users via WebSocket while pairing over WebRTC, with Redis-backed pub/sub keeping every keystroke fast and synced across instances",
+        "A real-time collaborative development workspace with a built-in code editor, video calling, and synchronized whiteboards. Sync Monaco Editor and whiteboard interactions across multiple users via WebSockets, while WebRTC enables peer-to-peer video collaboration and Redis Pub/Sub keeps changes fast and consistent across instances.",
       technologies: [
         "Spring Boot",
         "WebSocket",
         "STOMP",
         "Redis",
-        "Redis Pub/Sub",
+        "Pub/Sub Pattern",
         "LiveKit",
         "WebRTC",
         "PostgreSQL",
         "React",
         "Monaco Editor",
         "JWT",
-        "Docker"
+        "Docker",
+        "Redis Cache",
       ],
       links: [
         {
