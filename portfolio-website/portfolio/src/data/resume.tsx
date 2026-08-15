@@ -222,7 +222,7 @@ export const DATA = {
         },
         {
           type: "Website",
-          href: "",
+          href: "http://bookmystay.tushardev.me/api/v1/swagger-ui/index.html",
           icon: <Icons.globe className="size-3" />,
         },
       ],
