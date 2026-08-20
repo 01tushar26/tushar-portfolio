@@ -187,6 +187,11 @@ export const DATA = {
           href: "https://github.com/01tushar26/DevHive",
           icon: <Icons.github className="size-3" />,
         },
+       {
+          type: "Website",
+          href: "http://devhive.tushardev.me",
+          icon: <Icons.globe className="size-3" />,
+        },
       ],
       image: "",
       video: "",
