@@ -180,6 +180,9 @@ export const DATA = {
         "JWT",
         "Docker",
         "Redis Cache",
+        "Nginx",
+        "AWS EC2",
+        "Excalidraw",
       ],
       links: [
         {
