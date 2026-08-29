@@ -192,7 +192,7 @@ export const DATA = {
         },
        {
           type: "Website",
-          href: "http://devhive.tushardev.me",
+          href: "https://devhive.tushardev.me",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -230,7 +230,7 @@ export const DATA = {
         },
         {
           type: "Website",
-          href: "http://bookmystay.tushardev.me/api/v1/swagger-ui/index.html",
+          href: "https://bookmystay.tushardev.me/api/v1/swagger-ui/index.html",
           icon: <Icons.globe className="size-3" />,
         },
       ],
