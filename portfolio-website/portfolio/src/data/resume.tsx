@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Backend Engineer with hands-on experience building scalable REST APIs, microservices, and AI-powered systems. I specialise in backend development with Java and Spring Boot, cloud-native deployments on AWS, and AI application development.",
   summary:
-    "Backend Engineer passionate about building production-grade systems. Currently working on scalable microservices and building **[DevHive](https://github.com/01tushar26/devhive)**, a developer collaboration platform. I specialise in backend development with Java and Spring Boot, cloud-native deployments, and AI-powered application development.",
+    "Backend Engineer passionate about building production-grade systems. Currently working on scalable microservices and building **[Learnify](https://github.com/01tushar26/Learnify_Major)**, a learning tool that turns any document or lecture video into an interactive, hallucination-free study companion. I specialise in backend development with Java and Spring Boot, cloud-native deployments, and AI-powered application development.",
   avatarUrl: "/me.jpg",
   skills: [
      "Java",
