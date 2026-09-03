@@ -182,6 +182,7 @@ export const DATA = {
         "Redis Cache",
         "Nginx",
         "AWS EC2",
+        "GitHub Actions",
         "Excalidraw",
       ],
       links: [
