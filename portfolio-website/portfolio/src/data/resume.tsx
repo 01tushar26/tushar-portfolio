@@ -203,12 +203,12 @@ export const DATA = {
         },
         {
     type: "Demo",
-    href: "",
+    href: "https://drive.google.com/file/d/1ijXrqovLRy38tfhum5PD85UQix9b_LYS/view?usp=sharing",
     icon: <Icons.youtube className="size-3" />,
   },
       ],
       image: "",
-      video: "https://drive.google.com/file/d/1ijXrqovLRy38tfhum5PD85UQix9b_LYS/view?usp=sharing",
+      video: "",
     },
    
     {
