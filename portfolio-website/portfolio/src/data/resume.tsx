@@ -155,9 +155,14 @@ export const DATA = {
           href: "https://github.com/01tushar26/Learnify_Major",
           icon: <Icons.github className="size-3" />,
         },
+        {
+    type: "Demo",
+    href: "https://drive.google.com/file/d/12O6mslE8s1_Hp1HIdH_vWEF4GnKuuxBP/view?usp=sharing",
+    icon: <Icons.youtube className="size-3" />,
+  },
       ],
       image: "",
-      video: "intro.mp4",
+      video: "",
     },
     {
       title: "DevHive",
@@ -196,9 +201,14 @@ export const DATA = {
           href: "https://devhive.tushardev.me",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+    type: "Demo",
+    href: "",
+    icon: <Icons.youtube className="size-3" />,
+  },
       ],
       image: "",
-      video: "devhive-intro.mp4",
+      video: "https://drive.google.com/file/d/1ijXrqovLRy38tfhum5PD85UQix9b_LYS/view?usp=sharing",
     },
    
     {
