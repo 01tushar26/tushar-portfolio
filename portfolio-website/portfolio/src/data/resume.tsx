@@ -157,7 +157,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "",
+      video: "intro.mp4",
     },
     {
       title: "DevHive",
@@ -198,7 +198,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "",
+      video: "devhive-intro.mp4",
     },
    
     {
