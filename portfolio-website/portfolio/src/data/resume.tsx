@@ -244,6 +244,11 @@ export const DATA = {
           href: "https://bookmystay.tushardev.me/api/v1/swagger-ui/index.html",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+    type: "Demo",
+    href: "https://drive.google.com/file/d/1lw_3RSZ22-o0I5VlCKqhCH-5KcKfGEHr/view?usp=sharing",
+    icon: <Icons.youtube className="size-3" />,
+  },
       ],
       image: "",
       video: "",
