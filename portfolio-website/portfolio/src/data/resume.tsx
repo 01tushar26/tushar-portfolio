@@ -328,6 +328,14 @@ export const DATA = {
     },
   ],
   blogs: [
+    {
+    title: "Why Your RAG Pipeline Doesn’t Give Grounded Answers (and How to Fix It)",
+    description:
+      "Before you blame the LLM, look at the retrieval step before it. Your pipeline hands the model the top k chunks, but the most relevant chunk is not always inside those top k. Sometimes the real answer sits at rank 7 while you only pass 4. Sometimes a chunk that just talks about the topic beats the chunk that actually contains the answer. If the right chunk never reaches the LLM, no prompt can save you.In this blog, we will see how retrieval actually works, why it misses, and how to optimize it with re-ranking.",
+    date: "OCT 2026",
+    href: "https://medium.com/@tushartyagi2601/why-your-rag-pipeline-doesnt-give-grounded-answers-and-how-to-fix-it-a63ed6172e56",
+    tags: ["RAG", "LLM", "Semantic Search", "Generative AI"],
+  },
   {
     title: "Peeking Behind the Video Call: A WebRTC Deep Dive",
     description:
@@ -336,13 +344,6 @@ export const DATA = {
     href: "https://medium.com/@tushartyagi2601/peeking-behind-the-video-call-a-webrtc-deep-dive-6851ef9fb900",
     tags: ["WebRTC", "Real Time Communication"],
   },
-  {
-    title: "Why Your RAG Pipeline Doesn’t Give Grounded Answers (and How to Fix It)",
-    description:
-      "Before you blame the LLM, look at the retrieval step before it. Your pipeline hands the model the top k chunks, but the most relevant chunk is not always inside those top k. Sometimes the real answer sits at rank 7 while you only pass 4. Sometimes a chunk that just talks about the topic beats the chunk that actually contains the answer. If the right chunk never reaches the LLM, no prompt can save you.In this blog, we will see how retrieval actually works, why it misses, and how to optimize it with re-ranking.",
-    date: "OCT 2026",
-    href: "https://medium.com/@tushartyagi2601/why-your-rag-pipeline-doesnt-give-grounded-answers-and-how-to-fix-it-a63ed6172e56",
-    tags: ["RAG", "LLM", "Semantic Search", "Generative AI"],
-  },
+  
 ] ,
 } as const;
