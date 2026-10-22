@@ -146,6 +146,10 @@ export const DATA = {
         "Vectors",
         "FFMpeg",
         "Whisper",
+        "Cross Encoder",
+        "Cohere Rerank",
+        "Bi-Encoder",
+        
         "MultiContainer Docker",
         "React"
       ],
