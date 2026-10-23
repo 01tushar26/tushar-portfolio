@@ -133,8 +133,8 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "A study assistant that turns any PDF or lecture video into an interactive knowledge base — chat with your documents and auto-generate quizzes via RAG (Retrieval-Augmented Generation), with vector-backed retrieval keeping every answer accurate and grounded at ~3sec latency.",
-      technologies: [
+        "A study assistant that turns any PDF or lecture video into an interactive tutor. Chat with your documents and auto-generate MCQ quizzes through a two-stage RAG pipeline: pgvector similarity search, then cross-encoder reranking, so every answer stays accurate and grounded at ~3 sec latency. Built as an async microservice system (API gateway, video and RAG workers on RabbitMQ) with Groq Whisper transcription in 99 languages, plus Google OAuth2 login with rotating JWT tokens."
+      ,technologies: [
         "Spring Boot",
         "Spring AI",
         "pgVector",
